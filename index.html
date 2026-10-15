@@ -104,8 +104,11 @@
   }
   .lead { margin: 0; color: var(--ink-2); max-width: 36em; }
   h1, h2, h3 { text-wrap: balance; }
-  p, dd, .work span { text-wrap: pretty; }
+  p, dd { text-wrap: pretty; }
+  .work li { text-wrap: balance; }
   .nw { white-space: nowrap; }
+  .s { display: block; text-wrap: balance; }
+  .s + .s { margin-top: 0.15em; }
 
   /* summary block */
   .biblio {
@@ -210,7 +213,7 @@
     <div class="hero">
       <p class="name"><b>정호영</b>변리사</p>
       <h1>시드 직후부터 상장 준비까지,<br> 스타트업 성장의 전 단계에서 <span class="nw">IP를 책임져 왔습니다.</span></h1>
-      <p class="lead">루닛(의료 AI)과 리벨리온(AI 반도체)에서 7년 반 동안 사내 IP를 맡았습니다. 두 회사가 투자 유치, 글로벌 파트너십, 기술특례상장 준비, 합병을 거치는 동안 투자사와 파트너의 IP 검증에 대응했습니다. 지금은 정아이피에서 스타트업의 IP 전략과 실행을&nbsp;자문합니다.</p>
+      <p class="lead"><span class="s"><span class="nw">루닛(의료 AI)과</span> <span class="nw">리벨리온(AI 반도체)에서</span> 7년&nbsp;반&nbsp;동안 사내&nbsp;IP를&nbsp;맡았습니다.</span><span class="s">두 회사가 투자 유치, 글로벌 파트너십, 기술특례상장 준비, 합병을 거치는 동안 투자사와 파트너의 IP&nbsp;검증에&nbsp;대응했습니다.</span><span class="s">지금은 정아이피에서 스타트업의 IP&nbsp;전략과 실행을&nbsp;자문합니다.</span></p>
     </div>
 
     <div class="biblio" aria-label="요약">
@@ -237,21 +240,21 @@
           <div class="when">2021 – 2026</div>
           <div class="what">
             <h3>리벨리온<span>AI 반도체</span></h3>
-            <p>초대 사내변리사이자 유일한 IP 담당. <span class="nw">시리즈 A</span>부터 <span class="nw">프리 IPO</span>까지 투자 라운드의 IP 실사에 대응했고, 사피온코리아 합병의 IP 실무를 맡았습니다. 글로벌 파트너십과 IPO 준비 단계까지&nbsp;함께했습니다.</p>
+            <p><span class="s">초대 사내변리사이자 유일한 IP&nbsp;담당.</span><span class="s"><span class="nw">시리즈 A</span>부터 <span class="nw">프리 IPO</span>까지 투자&nbsp;라운드의 IP&nbsp;실사에&nbsp;대응했고, 사피온코리아&nbsp;합병의 IP&nbsp;실무를&nbsp;맡았습니다.</span><span class="s">글로벌 파트너십과 IPO&nbsp;준비 단계까지&nbsp;함께했습니다.</span></p>
           </div>
         </li>
         <li>
           <div class="when">2019 – 2021</div>
           <div class="what">
             <h3>루닛<span>의료 AI</span></h3>
-            <p>IP팀 리더이자 초대 사내변리사. 기술특례상장 기술성평가(AA·AA)와 GE헬스케어, 필립스, <span class="nw">Guardant Health</span> 등과의 투자·파트너십 IP 실사에 대응했습니다. <span class="nw">특허청 특허기술상(홍대용상, 2020)</span> 수상 특허의 출원과 수상 심사 대응을&nbsp;맡았습니다.</p>
+            <p><span class="s">IP팀 리더이자 초대&nbsp;사내변리사.</span><span class="s">기술특례상장 <span class="nw">기술성평가(AA·AA)와</span> GE헬스케어, 필립스, <span class="nw">Guardant Health</span> 등과의 <span class="nw">투자·파트너십</span> IP&nbsp;실사에&nbsp;대응했습니다.</span><span class="s"><span class="nw">특허청 특허기술상(홍대용상, 2020)</span> 수상&nbsp;특허의 출원과 수상 심사 대응을&nbsp;맡았습니다.</span></p>
           </div>
         </li>
         <li>
           <div class="when">2012 – 2019</div>
           <div class="what">
             <h3>특허법인</h3>
-            <p>LG전자 전략 발명의 명세서 작성과 심사 대응, 삼성전자 해외 심사 대응, 해외 분쟁에 대비한 <span class="nw">무효·비침해·회피설계</span> 컨설팅을&nbsp;수행했습니다.</p>
+            <p><span class="s">LG전자 전략 발명의 명세서 작성과 심사&nbsp;대응, 삼성전자 해외 심사 대응을&nbsp;맡았습니다.</span><span class="s">해외&nbsp;분쟁에 대비한 <span class="nw">무효·비침해·회피설계</span> 컨설팅을&nbsp;수행했습니다.</span></p>
           </div>
         </li>
       </ol>
@@ -260,18 +263,18 @@
     <section aria-labelledby="h-work">
       <h2 id="h-work">하는 일</h2>
       <ul class="work">
-        <li><strong>IP 전략과 포트폴리오 계획</strong><span>기술, 제품, 투자 단계에 맞춰 어떤 권리를 언제, 어느 나라에서 갖출지&nbsp;정합니다.</span></li>
-        <li><strong>투자 실사·기술특례상장 대비</strong><span>투자사와 기술성평가기관이 묻는 IP 질문에 답할 자료와 권리 상태를&nbsp;정리합니다.</span></li>
-        <li><strong>권리 관계와 계약</strong><span>발명의 귀속, 공동연구·라이선스·외주 계약의 IP 조항을&nbsp;검토합니다.</span></li>
-        <li><strong>분쟁·침해 검토</strong><span>타사 특허의 침해 여부 검토, 회피설계, 경고장 대응을&nbsp;맡습니다.</span></li>
+        <li><strong>IP 전략과 포트폴리오 계획</strong><span>기술, 제품, 투자 단계에 맞춰 어떤 권리를 언제, 어느&nbsp;나라에서 갖출지&nbsp;정합니다.</span></li>
+        <li><strong>투자 실사·기술특례상장 대비</strong><span>투자사와 기술성평가기관이 묻는 IP&nbsp;질문에&nbsp;답할 자료와 권리 상태를&nbsp;정리합니다.</span></li>
+        <li><strong>권리 관계와 계약</strong><span>발명의 귀속, <span class="nw">공동연구·라이선스·외주</span> 계약의 IP&nbsp;조항을&nbsp;검토합니다.</span></li>
+        <li><strong>분쟁·침해 검토</strong><span>타사 특허의 침해 여부 검토, 회피설계, 경고장&nbsp;대응을&nbsp;맡습니다.</span></li>
         <li><strong>핵심 발명의 출원</strong><span>정기 자문 고객의 중요한 발명은 출원까지 직접&nbsp;맡습니다.</span></li>
       </ul>
     </section>
 
     <section aria-labelledby="h-how" class="prose">
       <h2 id="h-how">일하는 방식</h2>
-      <p>IP 판단이 경영 판단과 어긋나지 않도록, 대표와 직접 논의하며&nbsp;일합니다.</p>
-      <p>들어오는 의뢰만 처리하지 않고, 사내변리사로 일하던 방식 그대로 회사 일정에 맞춰 무엇을 언제 할지 먼저 정리하고 함께 챙깁니다. 정기 자문 또는 시간 단위로&nbsp;일합니다.</p>
+      <p><span class="s">IP&nbsp;판단이 경영 판단과 어긋나지&nbsp;않도록, 대표와 직접 논의하며&nbsp;일합니다.</span></p>
+      <p><span class="s">들어오는 의뢰만 처리하지 않고, 사내변리사로 일하던 방식 그대로 회사 일정에 맞춰 무엇을&nbsp;언제&nbsp;할지 먼저 정리하고 함께&nbsp;챙깁니다.</span><span class="s">정기 자문 또는 시간 단위로&nbsp;일합니다.</span></p>
     </section>
 
     <section aria-labelledby="h-public">
