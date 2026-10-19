@@ -292,6 +292,20 @@
     .tc td:first-child { width: auto; font-weight: 600; font-size: 16px; padding-top: 8px; }
     .tc td[data-label]::before { content: attr(data-label); display: block; font-size: 13px; color: var(--ink-3); font-weight: 500; }
   }
+
+  /* 2026-10-19 레이아웃: 홈페이지와 같은 틀 (데스크톱에서 왼쪽 열에 섹션 제목) */
+  article section:not(.summary) { padding: 18px 0 0; margin-top: 48px; border-top: 1px solid var(--ink); }
+  article section:not(.summary) > h2 { border-bottom: 0; padding-bottom: 0; font-size: 19px; }
+  @media (min-width: 960px) {
+    .page { max-width: 1080px; padding: 0 40px; }
+    .head { padding-top: 72px; }
+    .head h1 { max-width: 24em; }
+    .head .lead { max-width: 40em; }
+    article section:not(.summary) { display: grid; grid-template-columns: 13rem minmax(0, 1fr); column-gap: 56px; margin-top: 56px; }
+    article section:not(.summary) > h2 { grid-column: 1; grid-row: 1 / span 60; margin: 0; padding-top: 1px; }
+    article section:not(.summary) > :not(h2) { grid-column: 2; }
+    .summary, .author, .related, .back { margin-left: calc(13rem + 56px); }
+  }
 </style>
 </head>
 <body>

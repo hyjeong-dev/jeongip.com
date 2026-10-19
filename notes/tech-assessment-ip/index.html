@@ -285,6 +285,20 @@
     .t4 td:first-child { width: auto; font-weight: 600; font-size: 16px; padding-top: 8px; }
     .t4 td[data-label]::before { content: attr(data-label); display: block; font-size: 13px; color: var(--ink-3); font-weight: 500; }
   }
+
+  /* 2026-10-19 레이아웃: 홈페이지와 같은 틀 (데스크톱에서 왼쪽 열에 섹션 제목) */
+  article section:not(.summary) { padding: 18px 0 0; margin-top: 48px; border-top: 1px solid var(--ink); }
+  article section:not(.summary) > h2 { border-bottom: 0; padding-bottom: 0; font-size: 19px; }
+  @media (min-width: 960px) {
+    .page { max-width: 1080px; padding: 0 40px; }
+    .head { padding-top: 72px; }
+    .head h1 { max-width: 24em; }
+    .head .lead { max-width: 40em; }
+    article section:not(.summary) { display: grid; grid-template-columns: 13rem minmax(0, 1fr); column-gap: 56px; margin-top: 56px; }
+    article section:not(.summary) > h2 { grid-column: 1; grid-row: 1 / span 60; margin: 0; padding-top: 1px; }
+    article section:not(.summary) > :not(h2) { grid-column: 2; }
+    .summary, .author, .related, .back { margin-left: calc(13rem + 56px); }
+  }
 </style>
 </head>
 <body>
@@ -445,7 +459,7 @@
           <li><a href="https://www.hankyung.com/article/2026030977556">거래소, 코스닥 기술특례상장 평가기관 26곳→16곳 축소</a>, 한국경제, 2026년 3월 9일</li>
           <li><a href="https://www.hankyung.com/article/2026090447216">거래소, 코스닥 전문평가 운영체계 개편 공청회 및 워크숍 개최</a>, 한국경제, 2026년 9월 4일</li>
           <li>전문평가제도 운영지침(2026년 5월 19일 시행) 별표 1 평가항목, 한국거래소</li>
-          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20783&amp;ntatcSeq=20783">인공지능·첨단바이오 창업 초기 기업, 1개월 내에 특허심사 결과 받는다!</a>, 지식재산처 보도자료, 2026년 2월 23일</li>
+          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20783&amp;ntatcSeq=20783">인공지능·첨단바이오 창업 초기 기업, 1개월 내에 특허심사 결과 받는다!</a>, 지식재산처 보도자료, 2026년&nbsp;2월&nbsp;23일</li>
           <li>메쥬·셀비온·스카이랩스 등 13개사 투자설명서의 전문평가기관 종합의견, 금융감독원 전자공시시스템(DART)</li>
         </ul>
       </section>
