@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 발명은 특허를 받을 수 있을까: AI 스타트업이 특허와 영업비밀을 나누는 기준 | 정아이피 Jeong IP</title>
+<meta name="description" content="AI 스타트업 대표와 CTO를 위해 AI 발명이 특허를 받을 수 있는지, AI 기술이 빨리 바뀌어도 특허가 의미가 있는지, 특허와 영업비밀을 나누는 기준, AI를 써서 만든 발명의 발명자 문제를 지식재산처 심사실무가이드와 안내서를 바탕으로 정리했습니다.">
+<link rel="canonical" href="https://jeongip.com/notes/ai-invention-patent/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://jeongip.com/notes/ai-invention-patent/">
+<meta property="og:title" content="AI 발명은 특허를 받을 수 있을까: AI 스타트업이 특허와 영업비밀을 나누는 기준">
+<meta property="og:description" content="AI 발명의 특허 요건, 빨리 바뀌는 AI 기술에서 특허의 의미, 특허와 영업비밀을 나누는 기준, AI를 쓴 발명의 발명자.">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://jeongip.com/notes/ai-invention-patent/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+<meta property="og:image:alt" content="AI 발명은 특허를 받을 수 있을까, 정호영 변리사, 정아이피">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="article:published_time" content="2026-10-21">
+<meta name="author" content="정호영">
+<meta name="theme-color" content="#F6F7F9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://jeongip.com/notes/ai-invention-patent/#article",
+      "headline": "AI 발명은 특허를 받을 수 있을까: AI 스타트업이 특허와 영업비밀을 나누는 기준",
+      "description": "AI 스타트업 대표와 CTO를 위해 AI 발명이 특허를 받을 수 있는지, AI 기술이 빨리 바뀌어도 특허가 의미가 있는지, 특허와 영업비밀을 나누는 기준, AI를 써서 만든 발명의 발명자 문제를 지식재산처 심사실무가이드와 안내서를 바탕으로 정리했습니다.",
+      "datePublished": "2026-10-21",
+      "dateModified": "2026-10-21",
+      "inLanguage": "ko-KR",
+      "mainEntityOfPage": "https://jeongip.com/notes/ai-invention-patent/",
+      "image": "https://jeongip.com/notes/ai-invention-patent/og.png",
+      "author": {
+        "@type": "Person",
+        "name": "정호영",
+        "alternateName": "Hoyoung Jeong",
+        "jobTitle": "변리사",
+        "url": "https://jeongip.com/",
+        "sameAs": [
+          "https://www.linkedin.com/in/hoyoungjeong/"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "정아이피",
+        "alternateName": "Jeong IP",
+        "url": "https://jeongip.com/"
+      },
+      "about": [
+        "AI 발명",
+        "인공지능 특허",
+        "영업비밀",
+        "발명자",
+        "스타트업 IP 전략"
+      ],
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "정아이피",
+        "url": "https://jeongip.com/"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "학습 데이터나 학습한 모델도 특허가 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "데이터 자체는 단순한 정보에 해당해 발명으로 보기 어렵습니다. 학습 데이터를 만드는 방법, 모델을 학습시키는 방법, 학습한 모델을 쓰는 방법은 구체적인 처리 과정으로 쓰면 특허 대상이 될 수 있습니다. 명세서에 데이터셋 자체를 공개할 필요는 일반적으로 없지만, 효과가 데이터의 특성에 좌우된다면 그 특성은 밝혀야 한다는 것이 유럽 특허청의 기준입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "공개된 AI 모델을 가져다 쓴 서비스도 특허를 받을 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "모델을 일반적인 방법으로 가져다 쓴 것만으로는 어렵습니다. 서비스 환경에 맞춰 모델을 고치거나 데이터를 처리하는 과정에 회사만의 방법이 있다면, 그 부분을 중심으로 특허를 받을 수 있습니다. 위의 서빙 로봇 사례가 이 경우입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "생성형 AI로 얻은 아이디어를 출원해도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "사람이 발명에 실질적으로 기여했다면 출원할 수 있습니다. AI가 낸 결과물을 그대로 출원하면 거절되거나 나중에 무효가 될 수 있습니다. 문제를 정하고, 결과를 골라 고치고, 실제로 검증한 과정을 기록으로 남겨 두는 편이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "개발자가 코딩 AI로 짠 코드에서 나온 발명도 사람이 발명자인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "무엇을 해결할지 정하고 어떤 구조와 처리 방식을 쓸지 정한 사람이 있다면, 코드를 AI가 썼더라도 그 사람이 발명자가 될 수 있다고 봅니다. 특허는 코드보다 그 안에 담긴 기술적 아이디어를 보호하기 때문입니다. 다만 AI가 제안한 방식을 그대로 받아들인 부분은 사람의 기여를 설명하기 어려울 수 있어, 설계 판단을 기록으로 남겨 두는 편이 좋습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "미국에 출원한다면 무엇이 다른가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "미국은 심사와 법원의 판단이 다를 수 있습니다. 미국 특허상표청은 2025년 AI 학습 방법 자체를 개선한 발명을 특허 대상으로 본 결정을 선례로 지정했습니다. 반면 법원은 일반적인 머신러닝을 새 분야에 적용한 수준의 청구항을 무효로 보고 있습니다. 그래서 미국에서는 처리 방식과 함께 그 방식이 가져오는 구체적인 기술적 개선을 청구항에 담아야 한다고 봅니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "특허 대신 영업비밀로 두면 무엇을 준비해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "실제로 비밀로 관리하고, 그 사실을 증명할 수 있어야 합니다. 접근 권한 제한, 비밀 표시, 임직원 비밀유지 약정 같은 기록이 그 증거입니다. 다른 회사가 같은 기술을 독자적으로 개발하거나 분석해 알아내면 막기 어렵다는 점도 함께 고려해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "첫 특허는 언제 내면 좋을까요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "기술을 밖에 공개하기 전입니다. 학회 발표, 논문, IR 자료, 데모 영상도 공개에 해당할 수 있습니다. 한국과 미국은 공개한 뒤 1년 안에 출원하면 예외를 인정하지만, 유럽처럼 사실상 인정하지 않는 나라도 있습니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  :root {
+    --paper: #F6F7F9;
+    --sheet: #FFFFFF;
+    --ink: #172033;
+    --ink-2: #4A5468;
+    --ink-3: #7A8496;
+    --rule: #D8DDE5;
+    --blue: #1D47A8;
+    --blue-soft: #E8EDF8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #12161F; --sheet: #181D28; --ink: #E7EAF0; --ink-2: #B3BAC7;
+      --ink-3: #868FA0; --rule: #2C3341; --blue: #8FADF2; --blue-soft: #1F2840;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #12161F; --sheet: #181D28; --ink: #E7EAF0; --ink-2: #B3BAC7;
+    --ink-3: #868FA0; --rule: #2C3341; --blue: #8FADF2; --blue-soft: #1F2840;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.8;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+  a { color: var(--blue); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { text-decoration-thickness: 2px; }
+  a:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; border-radius: 2px; }
+  h1, h2, h3 { text-wrap: balance; }
+  p, li, td, th { text-wrap: pretty; }
+  .nw { white-space: nowrap; }
+
+  .page { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+  .mast {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 16px; flex-wrap: wrap;
+    padding: 28px 0 20px;
+    border-bottom: 1px solid var(--rule);
+    font-size: 15px;
+  }
+  .wordmark { font-weight: 600; letter-spacing: -0.01em; color: var(--ink); text-decoration: none; }
+  .wordmark span { color: var(--ink-3); font-weight: 400; margin-left: 6px; }
+
+  .head { padding: 56px 0 8px; }
+  h1 {
+    margin: 0 0 18px;
+    font-size: clamp(25px, 4.6vw, 36px);
+    line-height: 1.38;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+  .meta { margin: 0 0 28px; font-size: 15px; color: var(--ink-3); }
+  .lead { margin: 0; color: var(--ink-2); font-size: 18px; }
+
+  article section { padding: 48px 0 0; }
+  h2 {
+    margin: 0 0 20px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--ink);
+  }
+  h3 { margin: 28px 0 8px; font-size: 18px; font-weight: 600; }
+  article p { margin: 0 0 16px; color: var(--ink-2); }
+  article p:last-child { margin-bottom: 0; }
+
+  .summary {
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-top: 40px;
+  }
+  .summary h2 { border-bottom: 0; padding-bottom: 0; margin-bottom: 10px; font-size: 17px; }
+
+  ul, ol { margin: 0 0 16px; padding-left: 1.3em; color: var(--ink-2); }
+  li { margin: 0 0 10px; padding-left: 0.2em; }
+  li:last-child { margin-bottom: 0; }
+  li b { color: var(--ink); font-weight: 500; }
+  .summary ul { margin: 0; }
+
+  .table-wrap { overflow-x: auto; margin: 4px 0 18px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--sheet);
+    border: 1px solid var(--rule);
+    font-size: 15.5px;
+    line-height: 1.6;
+  }
+  th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-top: 1px solid var(--rule); }
+  th { font-weight: 600; color: var(--ink); background: var(--blue-soft); border-top: 0; }
+  td { color: var(--ink-2); }
+  td:first-child { color: var(--ink); font-weight: 500; }
+  .t2 td:first-child { width: 34%; }
+  .t3 td:first-child { width: 20%; white-space: nowrap; }
+
+  .faq h3:first-of-type { margin-top: 4px; }
+
+  .author {
+    margin: 56px 0 0;
+    padding: 24px 28px;
+    background: var(--blue-soft);
+    border-radius: 4px;
+    font-size: 15.5px;
+  }
+  .author p { margin: 0 0 8px; color: var(--ink-2); }
+  .author p:last-child { margin: 0; }
+  .author b { color: var(--ink); font-weight: 600; }
+
+  .related { margin: 32px 0 0; font-size: 15.5px; }
+  .back { margin: 32px 0 56px; font-size: 15px; }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 20px 0 40px;
+    font-size: 13.5px;
+    color: var(--ink-3);
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .lead { font-size: 17px; }
+    .head { padding-top: 40px; }
+    .summary { padding: 18px 18px; }
+    th, td { padding: 10px 11px; font-size: 15px; }
+    .t2 td:first-child { width: 38%; }
+    .t3 { border: 0; background: transparent; }
+    .t3 thead { display: none; }
+    .t3 tbody, .t3 tr, .t3 td { display: block; width: auto; }
+    .t3 tr { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 10px; padding: 6px 0 10px; }
+    .t3 td { border: 0; padding: 4px 14px; }
+    .t3 td:first-child { width: auto; white-space: normal; font-weight: 600; font-size: 16px; padding-top: 8px; }
+    .t3 td[data-label]::before { content: attr(data-label); display: block; font-size: 13px; color: var(--ink-3); font-weight: 500; }
+    .author { padding: 20px; }
+  }
+
+  .tc td:first-child { width: 24%; }
+  .refs { font-size: 15px; }
+  .refs li { margin-bottom: 6px; }
+  .related { margin: 32px 0 0; font-size: 15.5px; }
+  .related ul { margin: 6px 0 0; }
+  @media (max-width: 560px) {
+    .tc { border: 0; background: transparent; }
+    .tc thead { display: none; }
+    .tc tbody, .tc tr, .tc td { display: block; width: auto; }
+    .tc tr { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 10px; padding: 6px 0 10px; }
+    .tc td { border: 0; padding: 4px 14px; }
+    .tc td:first-child { width: auto; font-weight: 600; font-size: 16px; padding-top: 8px; }
+    .tc td[data-label]::before { content: attr(data-label); display: block; font-size: 13px; color: var(--ink-3); font-weight: 500; }
+  }
+
+  /* 2026-10-19 레이아웃: 홈페이지와 같은 틀 (데스크톱에서 왼쪽 열에 섹션 제목) */
+  article section:not(.summary) { padding: 18px 0 0; margin-top: 48px; border-top: 1px solid var(--ink); }
+  article section:not(.summary) > h2 { border-bottom: 0; padding-bottom: 0; font-size: 19px; }
+  @media (min-width: 960px) {
+    .page { max-width: 1080px; padding: 0 40px; }
+    .head { padding-top: 72px; }
+    .head h1 { max-width: 24em; }
+    .head .lead { max-width: 40em; }
+    article section:not(.summary) { display: grid; grid-template-columns: 13rem minmax(0, 1fr); column-gap: 56px; margin-top: 56px; }
+    article section:not(.summary) > h2 { grid-column: 1; grid-row: 1 / span 60; margin: 0; padding-top: 1px; }
+    article section:not(.summary) > :not(h2) { grid-column: 2; }
+    .summary, .author, .related, .back { margin-left: calc(13rem + 56px); }
+  }
+  .lead + .lead { margin-top: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="mast">
+    <a class="wordmark" href="/">정아이피<span>Jeong IP</span></a>
+    <a href="mailto:contact@jeongip.com">contact@jeongip.com</a>
+  </header>
+
+  <main>
+    <article>
+      <div class="head">
+        <h1>AI 발명은 특허를 받을 수 있을까: AI&nbsp;스타트업이 특허와 영업비밀을 나누는&nbsp;기준</h1>
+        <p class="meta">정호영 변리사 · <time datetime="2026-10-21">2026년 10월 21일</time></p>
+        <p class="lead">AI 기술로 제품을 만드는 스타트업의 대표와 CTO를 위한 글입니다. 루닛(의료 AI)과 리벨리온(AI 반도체)에서 초대 사내변리사로 일하며, AI 관련 발명을 특허로 낼지 영업비밀로 둘지 판단해 왔습니다. 특허청 AI IP 협의체 위원(2019~2024)과 특허청·지식재산처 AI 특허심사기준 개정 협의회 위원(2025~2026)으로 AI 발명의 심사 기준을 논의하는 자리에도 참여했습니다.</p>
+        <p class="lead">상담에서 AI 스타트업 대표에게 가장 자주 받는 질문은 두 가지입니다. 「AI 발명도 특허로 보호받을 수 있느냐」와 「AI 기술은 금방 바뀌는데 특허가 의미가 있느냐」입니다. 두 질문에 대한 답과 함께, 특허와 영업비밀을 나누는 기준, AI를 써서 만든 발명의 발명자 문제를 정리했습니다.</p>
+      </div>
+
+      <section class="summary" aria-labelledby="h-summary">
+        <h2 id="h-summary">네 줄 요약</h2>
+        <ul>
+          <li>AI 발명도 특허를 받을 수 있습니다. 다만 사람이 하던 일을 AI로 바꾼 정도로는 어렵고, AI를 쓰는 방식에 구체적인 기술적 특징이 있어야 한다고 봅니다.</li>
+          <li>AI 기술이 빨리 바뀌어도 특허는 의미가 있다고 봅니다. 우선심사로 시간을 줄이고, 특정 모델보다 문제를 푸는 방식을 권리로 잡으면 됩니다.</li>
+          <li>특허로 낼지 영업비밀로 둘지는 다른 회사가 그 기술을 쓰는지 밖에서 확인할 수 있는지를 먼저 봅니다.</li>
+          <li>AI는 발명자가 될 수 없습니다. AI를 도구로 썼다면 사람이 무엇을 기여했는지 기록으로 남겨 두는 편이 안전합니다.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-can">
+        <h2 id="h-can">AI 발명은 특허를 받을 수 있나</h2>
+        <p>받을 수 있습니다. 특허청은 2020년 AI 분야 특허 심사실무가이드를 만들었고, 지식재산처는 2026년 1월 개정판에 특허가 인정되거나 부정된 사례 15개를 실었습니다(<a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20746&amp;ntatcSeq=20746">지식재산처</a>). 지식재산처는 AI 발명을 세 가지로 나눠 봅니다(<a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20927&amp;ntatcSeq=20927">지식재산처</a>).</p>
+        <div class="table-wrap">
+          <table class="tc">
+            <thead><tr><th scope="col">유형</th><th scope="col">예</th><th scope="col">주로 따지는 것</th></tr></thead>
+            <tbody>
+              <tr><td>AI 자체에 대한 발명</td><td data-label="예">모델 구조, 학습 방법</td><td data-label="주로 따지는 것">발명의 성립성(patent eligibility): 소프트웨어가 하드웨어와 결합해 구체적으로 정보를 처리하는지</td></tr>
+              <tr><td>AI를 구성요소로 포함한 발명</td><td data-label="예">AI를 탑재한 로봇, 의료 영상 판독 시스템</td><td data-label="주로 따지는 것">진보성(inventive step): AI를 쓰는 방식에 독창적인 기술적 특징이 있는지</td></tr>
+              <tr><td>AI를 도구로 쓴 발명</td><td data-label="예">AI로 찾은 소재나 후보물질</td><td data-label="주로 따지는 것">실시 가능성과 반복 재현성: AI가 낸 결과를 실제로 검증했는지</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>스타트업이 가장 많이 내는 것은 두 번째 유형, 곧 기존 제품이나 서비스에 AI를 적용한 발명입니다. 개정 가이드의 사례를 보면 기준이 분명합니다.</p>
+        <ul>
+          <li><b>서빙 로봇:</b> 공개된 AI 모델을 일반적인 방법으로 경량화해 로봇에 탑재한 것은 특허를 받을 수 없습니다. 음식점 환경과 로봇의 가용 자원을 반영해 최적화한 경우에는 인정될 수 있습니다.</li>
+          <li><b>AI 스피커:</b> 기존 온라인 채팅의 질의응답을 생성형 AI로 단순 교체한 것은 특허를 받을 수 없습니다. 음성으로 사용자의 연령대를 인식해 맞춤형 질의를 만드는 경우에는 인정될 수 있습니다.</li>
+        </ul>
+        <p>어떤 데이터를 어떻게 처리해 어떤 기술적 문제를 풀었는지가 청구항에 드러나야 한다고 봅니다. 다만 AI는 왜 그런 결과가 나오는지 설명하기 어려운 블랙박스(black box) 성격이 강합니다. 심사 기준을 논의하는 자리에서도 AI 발명을 어떻게 정의하고 설명할지가 주요 논의 대상이었습니다. 정의에 따라 명세서에 얼마나 자세히 써야 하는지(개시 의무, disclosure requirement)와 청구항을 어떻게 해석하는지가 함께 정해지기 때문입니다.</p>
+        <p>그래서 출원을 준비할 때는 발명을 입력 데이터, 데이터를 다듬는 과정, 모델의 구조나 학습 방법, 출력을 쓰는 방식으로 나눠 보고, 그중 어디에 회사만의 기술적 특징이 있는지 먼저 짚어 두는 편이 좋다고 생각합니다.</p>
+      </section>
+
+      <section aria-labelledby="h-fast">
+        <h2 id="h-fast">AI 기술은 금방 바뀌는데, 특허가 의미가 있나</h2>
+        <p>특허는 시간이 걸립니다. 2025년에는 심사청구 후 첫 심사까지 평균 14.7개월이 걸렸습니다(<a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20762&amp;ntatcSeq=20762">지식재산처</a>). 그래서 특허를 받을 즈음이면 이미 다음 모델이 나와 있지 않느냐는 질문을 자주 받습니다. 그래도 의미가 있다고 보는 이유는 세 가지입니다.</p>
+        <ol>
+          <li><b>시간을 줄일 수 있습니다.</b> 우선심사(prioritized examination)는 2025년 평균 심사대기기간이 2.1개월이었고, 제 경험으로도 요건을 갖춰 신청하면 AI 분야는 보통 3개월 안팎이었습니다. AI·첨단바이오 분야의 창업 초기 기업은 초고속심사(super-accelerated examination)로 1개월 안에 첫 심사를 받을 수도 있습니다(<a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20783&amp;ntatcSeq=20783">지식재산처</a>).</li>
+          <li><b>모델보다 문제를 푸는 방식을 권리로 잡으면 모델이 바뀌어도 권리가 남습니다.</b> 어떤 데이터를 받아 어떻게 처리하고 결과를 제품에서 어떻게 쓰는지는 잘 바뀌지 않습니다. 분할출원을 활용하면 같은 명세서로 나중에 경쟁 제품에 맞춘 청구항을 더 받을 수도 있습니다(<a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%8A%B9%ED%97%88%EB%B2%95">특허법 제52조</a>).</li>
+          <li><b>먼저 출원하면 다른 회사가 같은 기술로 권리를 받는 것을 막을 수 있습니다.</b> 투자 실사나 기술성평가에서 핵심 기술을 지키고 있다는 근거도 됩니다.</li>
+        </ol>
+        <p>반대로 특정 모델의 구조나 설정값처럼 몇 달 뒤 바뀔 것이 분명한 부분은 특허보다 빠른 출시와 영업비밀이 낫다고 생각합니다. 미국 시장을 본다면 청구항을 더 구체적으로 써야 하는데, 이 내용은 아래 자주 묻는 질문에 정리했습니다.</p>
+      </section>
+
+      <section aria-labelledby="h-secret">
+        <h2 id="h-secret">특허로 낼까, 영업비밀로 둘까</h2>
+        <p>특허는 기술을 공개하는 대가로 일정 기간 독점권을 받는 제도입니다. 공개하고 권리를 받았는데 누가 그 기술을 쓰는지 알 수 없다면, 권리를 행사할 수 없으니 기술만 공개한 셈이 됩니다.</p>
+        <p>그래서 사내변리사로 일할 때는 다른 회사가 그 기술을 쓰는지 밖에서 확인할 수 있는지를 가장 먼저 봤습니다. 다른 회사의 제품이나 서비스만 보고도 우리 특허를 쓰는지 알 수 있어야 권리를 행사할 수 있습니다. 특허 실무에서는 이를 침해 적발 가능성(detectability)이라고 부릅니다.</p>
+        <p>두 번째 기준은 다른 회사도 같은 생각에 이를 수 있는지입니다. 밖에서 확인하기가 어렵더라도, 같은 문제를 다루는 다른 회사도 비슷한 방법에 이를 수 있다고 보면 출원해서 선점하는 쪽으로 정했습니다. 다른 회사가 같은 기술로 먼저 특허를 받으면 우리가 그 기술을 쓰는 데 제약이 생길 수 있기 때문입니다.</p>
+        <div class="table-wrap">
+          <table class="tc">
+            <thead><tr><th scope="col">다른 회사가 쓰는지 확인</th><th scope="col">다른 회사가 같은 생각에 이를 가능성</th><th scope="col">판단</th></tr></thead>
+            <tbody>
+              <tr><td>쉬움: 제품 기능, 화면, 장치 동작처럼 밖에서 보임</td><td data-label="다른 회사가 같은 생각에 이를 가능성">상관없음</td><td data-label="판단">특허 출원</td></tr>
+              <tr><td>어려움: 서버 안의 학습 방법, 데이터 처리처럼 밖에서 보이지 않음</td><td data-label="다른 회사가 같은 생각에 이를 가능성">높음</td><td data-label="판단">특허 출원(선점)</td></tr>
+              <tr><td>어려움</td><td data-label="다른 회사가 같은 생각에 이를 가능성">낮음</td><td data-label="판단">영업비밀로 관리</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>AI 회사는 이 판단이 특히 중요합니다. 모델을 학습시키는 방법이나 학습 데이터를 만드는 방법처럼 핵심 기술의 많은 부분이 밖에서 보이지 않기 때문입니다. 반대로 모델의 결과를 제품에서 어떻게 쓰는지는 사용자에게 보이는 경우가 많아, 특허로 지키기 좋은 부분입니다.</p>
+        <p>영업비밀로 보호받으려면 그 정보를 실제로 비밀로 관리하고 있어야 하고, 다툼이 생기면 이를 증명할 수 있어야 합니다. 그래서 비밀로 관리했다는 기록과 비밀을 유지하려고 노력한 흔적을 남겨 두는 일이 중요합니다. 접근 권한 제한, 문서의 비밀 표시, 임직원 비밀유지 약정이 그 예입니다. 관리하지 않은 기술은 나중에 유출되어도 영업비밀로 인정받기 어렵습니다.</p>
+      </section>
+
+      <section aria-labelledby="h-inventor">
+        <h2 id="h-inventor">AI를 써서 만든 발명, 발명자는 누구인가</h2>
+        <p>AI는 발명자가 될 수 없습니다. AI 다부스(DABUS)를 발명자로 적은 출원에 대해 특허청은 무효 처분을 했고 1심과 2심 법원도 같은 판단을 했습니다. 국내 소송은 아직 진행 중이지만, 미국·영국·독일·일본 등 주요국에서는 자연인만 발명자로 인정하는 판단이 확정되었습니다(<a href="https://www.kipo.go.kr/ko/kpoContentView.do?menuCd=SCD0201238">지식재산처</a>, <a href="https://www.sbbit.jp/article/cont1/182034">비즈니스+IT</a>).</p>
+        <p>그렇다면 AI를 도구로 써서 만든 발명은 누가 발명자일까요. 지식재산처의 「AI 시대 올바른 특허출원 안내서」(2026년 6월)는 사람이 창작 과정에 실질적으로 기여해야 발명자로 인정되고, AI가 낸 결과물을 그대로 출원하면 거절되거나 나중에 무효가 될 수 있다고 설명합니다. 심사관은 연구개발 노트나 발명자 확인서를 요구할 수 있습니다(<a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20927&amp;ntatcSeq=20927">지식재산처</a>). 미국 특허상표청도 AI를 실험 장비 같은 도구로 보고, 다른 발명과 같은 기준으로 발명자를 판단합니다(<a href="https://www.federalregister.gov/documents/2025/11/28/2025-21457/revised-inventorship-guidance-for-ai-assisted-inventions">미국 연방관보</a>).</p>
+        <p>저는 이 문제를 카메라에 비교하곤 합니다. 사진이 처음 나왔을 때는 기계가 만든 사진에 저작권을 줄 수 있는지가 논란이었습니다. 미국 연방대법원은 1884년, 사진가가 포즈와 의상, 조명, 구도를 정해 찍은 사진은 저작물이 될 수 있다고 판단했습니다(<a href="https://www.govinfo.gov/content/pkg/USREPORTS-111/pdf/USREPORTS-111-53.pdf">미국 연방대법원 판결문</a>). 지금은 사진가가 저작자라는 데 의문을 갖는 사람이 거의 없습니다. AI도 도구이고, 그 도구로 무엇을 정하고 골랐는지가 사람의 몫이라고 생각합니다. 다만 사진은 저작권, 발명은 특허라서 판단 기준이 같지는 않습니다.</p>
+        <p>실무에서는 세 가지를 챙기면 된다고 봅니다.</p>
+        <ul>
+          <li>사람이 정한 문제와 가설, AI에 준 입력, AI의 결과 중 무엇을 골라 어떻게 고쳤는지를 연구노트나 회의록으로 남깁니다.</li>
+          <li>AI가 낸 효과나 실험 결과는 직접 검증한 뒤에 명세서에 씁니다. 실험하지 않은 데이터를 실제 결과처럼 내면 법적 책임이 따를 수 있습니다.</li>
+          <li>핵심 기술을 외부 AI 서비스에 입력할 때는 입력 내용이 학습에 쓰이지 않도록 설정을 확인합니다.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="h-dd">
+        <h2 id="h-dd">투자 실사에서 받게 될 질문</h2>
+        <p>AI 회사가 투자를 받을 때는 실사에서 이런 질문을 받을 수 있습니다.</p>
+        <ul>
+          <li>핵심 특허가 모델, 데이터, 서비스 중 어디를 보호하는지, 경쟁사가 쓰는지 확인할 수 있는 부분인지</li>
+          <li>특허로 지키지 않는 핵심 기술을 영업비밀로 관리하고 있는지</li>
+          <li>AI를 써서 만든 발명이 있다면 발명자와 그 기여가 기록으로 남아 있는지</li>
+        </ul>
+        <p>미국 시장을 보는 회사라면 세 번째가 특히 중요합니다. 한국에서는 발명자 문제만으로 특허를 무효로 하기가 쉽지 않지만, 미국에서는 특허의 효력을 다투는 근거가 될 수 있습니다. 데이터 권리와 오픈소스 라이선스는 <a href="/notes/ip-red-flags/">투자 전 IP 실사에서 확인할 레드 플래그</a>에서 다뤘습니다.</p>
+      </section>
+
+      <section aria-labelledby="h-todo">
+        <h2 id="h-todo">지금 할 일</h2>
+        <ol>
+          <li>제품의 핵심 기술을 입력, 처리, 모델, 출력으로 나누고, 어디에 회사만의 기술적 특징이 있는지&nbsp;적어&nbsp;봅니다.</li>
+          <li>기술마다 다른 회사가 쓰는지 밖에서 확인할 수 있는지 따져 특허와 영업비밀로 나눕니다.</li>
+          <li>특허로 갈 기술은 학회 발표, IR 자료, 데모로 공개하기 전에 출원하고, 일정이 급하면 우선심사를 검토합니다.</li>
+          <li>영업비밀로 둘 기술은 접근 권한, 비밀 표시, 비밀유지 약정으로 관리 기록을 남깁니다.</li>
+          <li>AI 도구를 쓴 개발은 사람이 정한 문제와 판단을 연구노트로 남깁니다.</li>
+        </ol>
+      </section>
+
+      <section class="faq" aria-labelledby="h-faq">
+        <h2 id="h-faq">자주 묻는 질문</h2>
+
+        <h3>학습 데이터나 학습한 모델도 특허가 되나요?</h3>
+        <p>데이터 자체는 단순한 정보에 해당해 발명으로 보기 어렵습니다. 학습 데이터를 만드는 방법, 모델을 학습시키는 방법, 학습한 모델을 쓰는 방법은 구체적인 처리 과정으로 쓰면 특허 대상이 될 수 있습니다. 명세서에 데이터셋 자체를 공개할 필요는 일반적으로 없지만, 효과가 데이터의 특성에 좌우된다면 그 특성은 밝혀야 한다는 것이 유럽 특허청의 기준입니다(<a href="https://www.epo.org/en/legal/guidelines-epc/2026/g_ii_3_3_1.html">유럽 특허청</a>).</p>
+
+        <h3>공개된 AI 모델을 가져다 쓴 서비스도 특허를 받을 수 있나요?</h3>
+        <p>모델을 일반적인 방법으로 가져다 쓴 것만으로는 어렵습니다. 서비스 환경에 맞춰 모델을 고치거나 데이터를 처리하는 과정에 회사만의 방법이 있다면, 그 부분을 중심으로 특허를 받을 수 있습니다. 위의 서빙 로봇 사례가 이 경우입니다.</p>
+
+        <h3>생성형 AI로 얻은 아이디어를 출원해도 되나요?</h3>
+        <p>사람이 발명에 실질적으로 기여했다면 출원할 수 있습니다. AI가 낸 결과물을 그대로 출원하면 거절되거나 나중에 무효가 될 수 있습니다. 문제를 정하고, 결과를 골라 고치고, 실제로 검증한 과정을 기록으로 남겨 두는 편이 좋습니다.</p>
+
+        <h3>개발자가 코딩 AI로 짠 코드에서 나온 발명도 사람이 발명자인가요?</h3>
+        <p>무엇을 해결할지 정하고 어떤 구조와 처리 방식을 쓸지 정한 사람이 있다면, 코드를 AI가 썼더라도 그 사람이 발명자가 될 수 있다고 봅니다. 특허는 코드보다 그 안에 담긴 기술적 아이디어를 보호하기 때문입니다. 다만 AI가 제안한 방식을 그대로 받아들인 부분은 사람의 기여를 설명하기 어려울 수 있어, 설계 판단을 기록으로 남겨 두는 편이 좋습니다.</p>
+
+        <h3>미국에 출원한다면 무엇이 다른가요?</h3>
+        <p>미국은 심사와 법원의 판단이 다를 수 있습니다. 미국 특허상표청은 2025년 AI 학습 방법 자체를 개선한 발명을 특허 대상으로 본 결정을 선례로 지정했습니다(<a href="https://www.uspto.gov/subscription-center/2025/uspto-updates-subject-matter-eligibility-guidance-mpep">미국 특허상표청</a>). 반면 법원은 일반적인 머신러닝을 새 분야에 적용한 수준의 청구항을 무효로 보고 있습니다(<a href="https://www.cafc.uscourts.gov/04-18-2025-23-2437-recentive-analytics-inc-v-fox-corp-opinion-23-2437-opinion-4-18-2025_2500790">미국 연방순회항소법원</a>). 그래서 미국에서는 처리 방식과 함께 그 방식이 가져오는 구체적인 기술적 개선을 청구항에 담아야 한다고 봅니다.</p>
+
+        <h3>특허 대신 영업비밀로 두면 무엇을 준비해야 하나요?</h3>
+        <p>실제로 비밀로 관리하고, 그 사실을 증명할 수 있어야 합니다. 접근 권한 제한, 비밀 표시, 임직원 비밀유지 약정 같은 기록이 그 증거입니다. 다른 회사가 같은 기술을 독자적으로 개발하거나 분석해 알아내면 막기 어렵다는 점도 함께 고려해야 합니다.</p>
+
+        <h3>첫 특허는 언제 내면 좋을까요?</h3>
+        <p>기술을 밖에 공개하기 전입니다. 학회 발표, 논문, IR 자료, 데모 영상도 공개에 해당할 수 있습니다. 한국과 미국은 공개한 뒤 1년 안에 출원하면 예외를 인정하지만, 유럽처럼 사실상 인정하지 않는 나라도 있습니다.</p>
+      </section>
+
+      <section class="refs" aria-labelledby="h-refs">
+        <h2 id="h-refs">참고 자료</h2>
+        <ul>
+          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20746&amp;ntatcSeq=20746">인공지능 특허심사사례, 심사실무가이드에서 확인하세요!</a>, 지식재산처 보도자료, 2026년 1월 15일</li>
+          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20762&amp;ntatcSeq=20762">지식재산처, 2026년 특허심사 처리계획 발표</a>, 지식재산처 보도자료, 2026년 2월 2일</li>
+          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20783&amp;ntatcSeq=20783">인공지능·첨단바이오 창업 초기 기업, 1개월 내에 특허심사 결과 받는다!</a>, 지식재산처 보도자료, 2026년 2월 23일</li>
+          <li><a href="https://www.kipo.go.kr/ko/kpoBultnDetail.do?menuCd=SCD0200618&amp;parntMenuCd2=SCD0200052&amp;aprchId=BUT0000029&amp;pgmSeq=20927&amp;ntatcSeq=20927">인공지능 활용 발명, 사람이 발명에 기여해야 발명자 인정된다</a>, 지식재산처 보도자료, 2026년 6월 9일</li>
+          <li><a href="https://www.kipo.go.kr/ko/kpoContentView.do?menuCd=SCD0201238">인공지능 발명자 이슈</a>, 지식재산처</li>
+          <li><a href="https://www.law.go.kr/%EB%B2%95%EB%A0%B9/%ED%8A%B9%ED%97%88%EB%B2%95">특허법 제52조(분할출원)</a>, 국가법령정보센터</li>
+          <li><a href="https://www.sbbit.jp/article/cont1/182034">AI를 발명자로 적은 출원, 최고재판소 상고 불수리</a>, 비즈니스+IT, 2026년 3월 6일</li>
+          <li><a href="https://www.federalregister.gov/documents/2025/11/28/2025-21457/revised-inventorship-guidance-for-ai-assisted-inventions">Revised Inventorship Guidance for AI-Assisted Inventions</a>, 미국 특허상표청, 미국 연방관보, 2025년&nbsp;11월&nbsp;28일</li>
+          <li><a href="https://www.uspto.gov/subscription-center/2025/uspto-updates-subject-matter-eligibility-guidance-mpep">USPTO updates subject matter eligibility guidance in the MPEP</a>, 미국 특허상표청, 2025년 12월</li>
+          <li><a href="https://www.cafc.uscourts.gov/04-18-2025-23-2437-recentive-analytics-inc-v-fox-corp-opinion-23-2437-opinion-4-18-2025_2500790">Recentive Analytics, Inc. v. Fox Corp., No. 2023-2437</a>, 미국 연방순회항소법원, 2025년 4월 18일</li>
+          <li><a href="https://www.epo.org/en/legal/guidelines-epc/2026/g_ii_3_3_1.html">Guidelines for Examination G-II 3.3.1</a>, 유럽 특허청, 2026년판</li>
+          <li><a href="https://www.govinfo.gov/content/pkg/USREPORTS-111/pdf/USREPORTS-111-53.pdf">Burrow-Giles Lithographic Co. v. Sarony, 111 U.S. 53 (1884)</a>, 미국 연방대법원</li>
+        </ul>
+      </section>
+
+      <aside class="author" aria-label="글쓴이">
+        <p><b>글쓴이: 정호영 변리사, 정아이피(Jeong IP)</b></p>
+        <p>루닛과 리벨리온에서 초대 사내변리사로 일하며 AI 관련 발명의 출원과 여러 투자 라운드, 기술특례상장의 IP 업무를 맡았습니다. 이 글은 그 경험을 바탕으로 쓴 일반적인 정보이며, 개별 사안에 대한 법률 의견이 아닙니다.</p>
+        <p>문의: <a href="mailto:contact@jeongip.com">contact@jeongip.com</a></p>
+      </aside>
+    </article>
+
+    <div class="related">함께 읽기:
+      <ul>
+        <li><a href="/notes/ip-red-flags/">투자 전 IP 실사에서 확인할 레드&nbsp;플래그</a></li>
+        <li><a href="/notes/tech-assessment-ip/">기술특례상장 기술성평가에서 평가기관이 특허로 확인하는&nbsp;것</a></li>
+        <li><a href="/notes/ip-due-diligence/">시리즈 A·B 투자 실사에서 투자사가 묻는 IP&nbsp;질문과 미리 준비할 자료</a></li>
+      </ul>
+    </div>
+    <p class="back"><a href="/">정아이피 소개로 돌아가기</a></p>
+  </main>
+
+  <footer>
+    <span>정아이피 Jeong IP · 변리사 정호영</span>
+    <span>© 2026 Jeong IP</span>
+  </footer>
+
+</div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "72f9d57f98294cac944f6b749933ae79"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
